@@ -32,7 +32,7 @@ const BellIcon = styled.div`
   background: url(${home}) center no-repeat;
   background-size: 16px 16px;
   width: 20px;
-  margin: 0 80px 0 50px;
+  margin: 0 110px 0 50px;
 `;
 
 const Category = styled.div`
@@ -41,7 +41,7 @@ const Category = styled.div`
 
 const CategoryTitle = styled.h1`
   font-size: 2rem;
-  margin-left: 100px;
+  margin-left: 110px;
 `;
 
 const Header = () => {

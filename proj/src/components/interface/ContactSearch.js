@@ -6,8 +6,11 @@ import search from 'assets/images/icons/search.png';
 const SearchContainer = styled.div`
   display: flex;
   flex-grow: 2
+  align-items: center;
   border-bottom: 1px solid lightgrey;
-  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 13px;
+  margin-bottom: 20px;
 `;
 
 const SearchIcon = styled.div`
@@ -31,6 +34,6 @@ const ContactSearch = () => {
       <Input placeholder="Search"/>
     </SearchContainer>
   )
-}
+};
 
 export default ContactSearch

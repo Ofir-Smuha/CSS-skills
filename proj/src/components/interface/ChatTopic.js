@@ -3,6 +3,10 @@ import styled from 'styled-components'
 
 const TopicContainer = styled.div`
   margin-bottom: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+  padding-bottom: 10px;
+  margin-left: 40px;
+  margin-bottom: 20px;
 `;
 
 const Title = styled.h1`
@@ -13,6 +17,7 @@ const Title = styled.h1`
 const From = styled.h4`
   font-size: 0.8rem;
   margin: 0;
+  color: #959BA7;
 `;
 
 

@@ -5,6 +5,7 @@ import Header from './Header'
 import ContactSearch from './ContactSearch'
 import ContactList from './ContactList'
 import ChatTopic from './ChatTopic'
+import Chat from './Chat'
 
 const Background = styled.div`
   width: 100%;
@@ -19,6 +20,14 @@ const ContextContainer = styled.div`
 `;
 
 const ContactsContainer = styled.div`
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+`;
+
+const TextingContainer = styled.div`
+  width: 700px;
+  height: 100%:
   display: flex;
   flex-direction: column;
 `;
@@ -32,7 +41,10 @@ const ChatContainer = () => {
           <ContactSearch/>
           <ContactList/>
         </ContactsContainer>
-        <ChatTopic/>
+        <TextingContainer>
+          <ChatTopic/>
+          <Chat/>
+        </TextingContainer>
       </ContextContainer>
     </Background>
   )
