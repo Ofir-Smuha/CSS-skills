@@ -44,21 +44,20 @@ const TrendRate = styled(TrendName)`
 `;
 
 
-const TrendsPreview = ({trend}) => {
-
-  // Can it be here? (there is a need for the props passed)
-  const TrendPhoto = styled.div`
-  background: url(${trend.img}) center no-repeat;
+const TrendPhoto = styled.div`
+  background: url(${props => props.img}) center no-repeat;
   background-size: cover;
   width: 80px;
   height: 80px;
   border-radius: 50%;
   `;
 
+
+const TrendsPreview = ({trend}) => {
   return (
     <Trend>
       <TrendPresentation>
-        <TrendPhoto/>
+        <TrendPhoto img={trend.img}/>
         <TrendName>{trend.title}</TrendName>
       </TrendPresentation>
       <TrendInfo>
